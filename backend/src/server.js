@@ -1,19 +1,17 @@
 import express from "express";
 import { ENV } from "./lib/env.js";
 import { connectDB } from "./lib/db.js";
+import cors from "cors";
+import { serve } from "inngest/express";
 
 const app = express();
 
 // Middleware
 app.use(express.json());
+// credentials: true meaning?? It allows the server to accept cookies and other credentials from the client, which is necessary for authentication and maintaining user sessions when the frontend and backend are on different domains.
+app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
 
-// Health Check Route
-app.get("/", (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "Backend is running 🚀",
-  });
-});
+app.use("/api/inngest", serve({ client:inngest , funtions}));
 
 const startServer = async () => {
   try {
