@@ -25,6 +25,6 @@ const userschema = new mongoose.Schema({
 
 // member since 2020 like this info using timestamps
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userschema);
 
 export default User;
