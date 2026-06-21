@@ -12,7 +12,7 @@ app.use(express.json());
 // credentials: true meaning?? It allows the server to accept cookies and other credentials from the client, which is necessary for authentication and maintaining user sessions when the frontend and backend are on different domains.
 app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
 
-app.use("/api/inngest", serve({ client:inngest , funtions}));
+app.use("/api/inngest", serve({ client:inngest , functions}));
 
 const startServer = async () => {
   try {
