@@ -13,6 +13,13 @@ app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
 
 app.use("/api/inngest", serve({ client:inngest , functions}));
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Backend is running 🚀",
+  });
+});
+
 const startServer = async () => {
   try {
     await connectDB();
