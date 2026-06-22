@@ -1,6 +1,6 @@
 # Talent-IQ 🚀
 
-A full-stack real-time technical interview platform built for coding interviews, live collaboration, video calls, chat messaging, and candidate evaluation.
+A production-ready real-time technical interview platform supporting collaborative coding, video interviews, live chat, authentication, and event-driven background processing.
 
 ## Live Demo
 https://talent-iq-rose.vercel.app
@@ -16,20 +16,17 @@ https://talent-iq-rose.vercel.app
 - Inngest
 - TanStack Query
 
-# Architecture
+## System Architecture
 
-Frontend (React)
-       |
-       v
-Clerk Authentication
-       |
-       v
-Node.js + Express API
-       |
-       v
-MongoDB
-
-#Stream Chat <--> Real-time Messaging
-#Stream Video <--> Video Calls
-
-#Inngest <--> Background Jobs
+Client (React + TanStack Query)
+        │
+        ▼
+Authentication (Clerk)
+        │
+        ▼
+Backend (Node.js + Express)
+        │
+        ├── MongoDB
+        ├── Stream Chat
+        ├── Stream Video
+        └── Inngest
