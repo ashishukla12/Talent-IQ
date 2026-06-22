@@ -16,17 +16,14 @@ https://talent-iq-rose.vercel.app
 - Inngest
 - TanStack Query
 
-## System Architecture
+## Tech Architecture
 
-Client (React + TanStack Query)
-        │
-        ▼
-Authentication (Clerk)
-        │
-        ▼
-Backend (Node.js + Express)
-        │
-        ├── MongoDB
-        ├── Stream Chat
-        ├── Stream Video
-        └── Inngest
+| Layer | Technology |
+|---------|------------|
+| Frontend | React, TanStack Query |
+| Authentication | Clerk |
+| Backend | Node.js, Express |
+| Database | MongoDB |
+| Real-Time Chat | Stream Chat |
+| Video Calls | Stream Video |
+| Background Jobs | Inngest |
