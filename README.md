@@ -128,27 +128,24 @@ https://talent-iq-rose.vercel.app
 
 ### Home Page
 
-(Add Screenshot)
 
 ### Dashboard
 
-(Add Screenshot)
+
 
 ### Interview Room
 
-(Add Screenshot)
 
 ### Collaborative Code Editor
 
-(Add Screenshot)
 
 ### Video Interview Interface
 
-(Add Screenshot)
+
 
 ### Chat Messaging
 
-(Add Screenshot)
+
 
 ---
 
