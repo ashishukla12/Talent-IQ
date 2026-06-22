@@ -29,7 +29,7 @@ Node.js + Express API
        v
 MongoDB
 
-Stream Chat <--> Real-time Messaging
-Stream Video <--> Video Calls
+#Stream Chat <--> Real-time Messaging
+#Stream Video <--> Video Calls
 
-Inngest <--> Background Jobs
+#Inngest <--> Background Jobs
