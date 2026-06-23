@@ -4,6 +4,9 @@ import { connectDB } from "./lib/db.js";
 import cors from "cors";
 import { serve } from "inngest/express";
 import { inngest, functions } from "./lib/inngest.js";
+import { clerkMiddleware } from '@clerk/express'
+import { protectedRoute } from "./middleware/protectedRoute.js";
+
 const app = express();
 
 // Middleware
@@ -11,13 +14,19 @@ app.use(express.json());
 // credentials: true meaning?? It allows the server to accept cookies and other credentials from the client, which is necessary for authentication and maintaining user sessions when the frontend and backend are on different domains.
 app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
 
+app.use(clerkMiddleware()) // Add Clerk middleware to handle authentication and user sessions
 app.use("/api/inngest", serve({ client:inngest , functions}));
+app.use("/api/chat", chatRoutes)
 
 app.get("/", (req, res) => {
   res.json({
     success: true,
     message: "Backend is running 🚀",
   });
+});
+
+app.get("/video-calls", protectedRoute, (req, res) => {
+  res.status(200).json({ message: "This is a protected route, only accessible to authenticated users." });
 });
 
 const startServer = async () => {
