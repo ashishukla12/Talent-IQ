@@ -8,7 +8,7 @@ import {
   getSessionById,
   joinSession,
   endSession
-} from "../controllers/sessionController"
+} from "../controllers/sessionController.js"
 
 const router = express.Router();
 
