@@ -1,6 +1,6 @@
 import e from "express";
 import expess from "express";
-import { protectedRoute } from "../middleware/protectedRoute";
+import { protectedRoute } from "../middleware/protectedRoute.js";
 import {
   createSession,
   getActiveSession,
