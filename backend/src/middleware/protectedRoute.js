@@ -20,3 +20,5 @@ export const protectedRoute = [
     }
   }
 ]
+
+export default protectedRoute;
