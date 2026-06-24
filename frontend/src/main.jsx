@@ -15,12 +15,12 @@ if (!PUBLISHABLE_KEY) {
   throw new Error('Missing Publishable Key. Please add it to your .env file');
 }
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
+      <QueryCLientProvider client = {queryClient}>
         <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
           <App />
         </ClerkProvider>
