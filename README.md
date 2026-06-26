@@ -134,17 +134,18 @@ https://talent-iq-rose.vercel.app
 
 
 ### Dashboard
+<img width="2854" height="1638" alt="image" src="https://github.com/user-attachments/assets/0c778f7e-1877-4fdd-b119-9febca78461a" />
 
 
-
-### Interview Room
+### Problems
+<img width="2858" height="1644" alt="image" src="https://github.com/user-attachments/assets/66a7b76b-d8f3-4823-84fd-71a2b8b3e910" />
 
 
 ### Collaborative Code Editor
+<img width="2848" height="1630" alt="image" src="https://github.com/user-attachments/assets/eb8345e1-30c1-4f17-945f-76392d04ef4f" />
 
 
 ### Video Interview Interface
-
 
 
 ### Chat Messaging
