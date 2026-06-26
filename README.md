@@ -146,10 +146,11 @@ https://talent-iq-rose.vercel.app
 
 
 ### Video Interview Interface
+<img width="2836" height="1550" alt="image" src="https://github.com/user-attachments/assets/804581f2-b00e-4918-a997-d4dd2f52d82f" />
 
 
 ### Chat Messaging
-
+<img width="2862" height="1600" alt="image" src="https://github.com/user-attachments/assets/5ec6fe15-5fb8-4de8-9ead-873d4f2b7ccc" />
 
 
 ---
