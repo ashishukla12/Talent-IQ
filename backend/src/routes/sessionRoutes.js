@@ -1,24 +1,22 @@
 import express from "express";
-import { protectedRoute } from "../middleware/protectedRoute.js";
+import { protectRoute } from "../middleware/protectRoute.js";
 import {
   createSession,
-  getActiveSession,
+  endSession,
+  getActiveSessions,
   getMyRecentSessions,
   getSessionById,
   joinSession,
-  endSession
-} from "../controllers/sessionController.js"
+} from "../controllers/sessionController.js";
 
 const router = express.Router();
 
-router.post("/", protectedRoute, createSession);
-router.get("/active", protectedRoute, getActiveSession);
-router.get("/my-recent", protectedRoute, getMyRecentSessions);
+router.post("/", protectRoute, createSession);
+router.get("/active", protectRoute, getActiveSessions);
+router.get("/my-recent", protectRoute, getMyRecentSessions);
 
-
-router.get("/:id", protectedRoute, getSessionById)
-router.post("/:id/join",protectedRoute, joinSession)
-router.post("/:id/end", protectedRoute, endSession)
-
+router.get("/:id", protectRoute, getSessionById);
+router.post("/:id/join", protectRoute, joinSession);
+router.post("/:id/end", protectRoute, endSession);
 
 export default router;
