@@ -127,6 +127,7 @@ https://talent-iq-rose.vercel.app
 ## 📸 Screenshots
 
 ### Home Page
+<img width="2850" height="1642" alt="image" src="https://github.com/user-attachments/assets/10e0b1b1-45d2-4103-8904-8d901359a1ed" />
 
 
 ### Dashboard
