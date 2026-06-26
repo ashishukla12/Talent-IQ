@@ -1,11 +1,5 @@
-import React from 'react'
-
-const Problempage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+function ProblemPage() {
+  return <div>ProblemPage</div>
 }
 
-export default Problempage
+export default ProblemPage
