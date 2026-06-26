@@ -4,6 +4,9 @@ A production-ready real-time technical interview platform designed for coding in
 
 Talent-IQ enables interviewers and candidates to collaborate in real time through video calls, collaborative coding sessions, screen sharing, and chat messaging while leveraging modern authentication and event-driven backend architecture.
 
+<img width="1280" height="720" alt="screenshot-for-readme" src="https://github.com/user-attachments/assets/9a3f3a91-ef7a-46da-8f38-6bbcaf21c7c7" />
+
+
 ---
 
 ## 🌐 Live Demo
