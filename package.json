@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stream-io/node-sdk": "^0.7.12"
+    "@stream-io/node-sdk": "^0.7.12",
+    "lucide-react": "^1.21.0"
   }
 }
